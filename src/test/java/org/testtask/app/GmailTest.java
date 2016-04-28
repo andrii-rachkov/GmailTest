@@ -30,11 +30,10 @@ public class GmailTest {
     }
 
     @Test(dataProvider = "GmailTest")
-    public void verifyGmailAuthorization(String email, String password) throws InterruptedException {
+    public void verifyGmailAuthorization(String email, String password) {
         open("/");
 
         GmailSpec.enterEmail(email).pressEnter();
-
         assertThat("Verify that mail entered correctly.",
                 GmailSpec.eMailErrorLabel.waitUntil(disappears, 2000).isDisplayed(), is(false));
 
