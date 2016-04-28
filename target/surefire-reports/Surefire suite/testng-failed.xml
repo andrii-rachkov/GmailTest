@@ -5,7 +5,9 @@
     <classes>
       <class name="org.testtask.app.GmailTest">
         <methods>
-          <include name="verifyGmailAuthorization"/>
+          <include name="setup"/>
+          <include name="verifyGmailAuthorization" invocation-numbers="0"/>
+          <include name="cleanup"/>
         </methods>
       </class> <!-- org.testtask.app.GmailTest -->
     </classes>

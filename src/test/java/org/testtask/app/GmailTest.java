@@ -1,5 +1,8 @@
 package org.testtask.app;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Condition.appears;
@@ -11,24 +14,41 @@ import static org.junit.Assert.assertThat;
 
 public class GmailTest {
 
-    @Test
-    public void verifyGmailAuthorization() {
+    @DataProvider(name = "GmailTest")
+    public Object[][] createTestData() {
+        return new Object[][] {
+            { "IncorrectMail", "IncorrectPassword" }
+        };
+    }
+
+    @BeforeMethod
+    public void setup(){
         timeout = 10000;
         baseUrl = "http://gmail.com";
         startMaximized = false;
-
-        open("/");
-        login();
-        assertThat("Verify that login authorization was successful.",
-                GmailSpec.googleAccount.waitUntil(appears, 20000).isDisplayed(), is(true));
-        closeWebDriver();
     }
 
-    private void login() {
-        GmailSpec.enterEmail(System.getProperty("gmail.username", "enter-your-gmail-username")).pressEnter();
-        assertThat("Verify that mail entered correctly.", GmailSpec.eMailErrorLabel.isDisplayed(), is(false));
-        GmailSpec.enterPassword(System.getProperty("gmail.password", "enter-your-gmail-password")).pressEnter();
-        assertThat("Verify that password entered correctly.", GmailSpec.passwordErrorLabel.isDisplayed(), is(false));
+    @Test(dataProvider = "GmailTest")
+    public void verifyGmailAuthorization(String email, String password) throws InterruptedException {
+        open("/");
+
+        GmailSpec.enterEmail(email).pressEnter();
+        Thread.sleep(2000);
+        assertThat("Verify that mail entered correctly.",
+                GmailSpec.eMailErrorLabel.isDisplayed(), is(false));
+
+        GmailSpec.enterPassword(password).pressEnter();
+        Thread.sleep(2000);
+        assertThat("Verify that password entered correctly.",
+                GmailSpec.passwordErrorLabel.exists(), is(false));
+
+        assertThat("Verify that login authorization was successful.",
+                GmailSpec.googleAccount.waitUntil(appears, 20000).isDisplayed(), is(true));
+    }
+
+    @AfterMethod
+    public void cleanup(){
+        closeWebDriver();
     }
 
 }

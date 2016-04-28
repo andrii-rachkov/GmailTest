@@ -101,7 +101,7 @@
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.testtask.app.GmailTest" hash-for-method="verifyGmailAuthorization">verifyGmailAuthorization</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="org.testtask.app.GmailTest" hash-for-method="verifyGmailAuthorization(IncorrectMail, IncorrectPassword)">verifyGmailAuthorization(IncorrectMail, IncorrectPassword)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -124,57 +124,56 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyGmailAuthorization">
-                  </a> <!-- verifyGmailAuthorization -->
+                  <a name="verifyGmailAuthorization(IncorrectMail, IncorrectPassword)">
+                  </a> <!-- verifyGmailAuthorization(IncorrectMail, IncorrectPassword) -->
                   <span class="method-name">verifyGmailAuthorization</span>
-                  <div class="stack-trace">Element not found {#Passwd}
+                  <span class="parameters">(IncorrectMail, IncorrectPassword)</span>
+                  <div class="stack-trace">Element not found {By.xpath: .//*[@class=&quot;gb_b gb_7a gb_R&quot;]}
 Expected: visible
-Screenshot: file:/D:/testtask/build/reports/tests/1461852733486.0.png
-Timeout: 10 s.
-Caused by: NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Passwd&quot;}
+Screenshot: file:/D:/testtask/build/reports/tests/1461854169405.0.png
+Timeout: 20 s.
+Caused by: NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@class=\&quot;gb_b gb_7a gb_R\&quot;]&quot;}
 	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:31)
 	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:82)
 	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:59)
-	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsVisible(WebElementSource.java:72)
-	at com.codeborne.selenide.commands.SetValue.execute(SetValue.java:20)
-	at com.codeborne.selenide.commands.Val.execute(Val.java:17)
+	at com.codeborne.selenide.commands.Should.should(Should.java:35)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:29)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:12)
 	at com.codeborne.selenide.commands.Commands.execute(Commands.java:136)
 	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:82)
 	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:58)
-	at com.sun.proxy.$Proxy2.val(Unknown Source)
-	at org.testtask.app.GmailSpec.enterPassword(GmailSpec.java:20)
-	at org.testtask.app.GmailTest.login(GmailTest.java:30)
-	at org.testtask.app.GmailTest.verifyGmailAuthorization(GmailTest.java:21)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Passwd&quot;}
-Command duration or timeout: 14 milliseconds
+	at com.sun.proxy.$Proxy5.waitUntil(Unknown Source)
+	at org.testtask.app.GmailTest.verifyGmailAuthorization(GmailTest.java:42)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@class=\&quot;gb_b gb_7a gb_R\&quot;]&quot;}
+Command duration or timeout: 30 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;HRK1-LHP-F49193&apos;, ip: &apos;172.28.135.60&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, pageLoadStrategy=none, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, pageLoadingStrategy=none, cssSelectorsEnabled=true}]
-Session ID: 7aa108d5-27be-415a-860b-fd9f6aae3730
-*** Element info: {Using=css selector, value=#Passwd}
+Session ID: 5d2dff4f-6966-478c-8cd3-d19c33723390
+*** Element info: {Using=xpath, value=.//*[@class=&quot;gb_b gb_7a gb_R&quot;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:28)
 	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:56)
 	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:44)
-	... 38 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Passwd&quot;}
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@class=\&quot;gb_b gb_7a gb_R\&quot;]&quot;}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;HRK1-LHP-F49193&apos;, ip: &apos;172.28.135.60&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous5143475495535736181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous5143475495535736181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous5143475495535736181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous5143475495535736181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous5143475495535736181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous4510642486092151392webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous4510642486092151392webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous4510642486092151392webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous4510642486092151392webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous4510642486092151392webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -236,12 +235,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyGmailAuthorization')
 data.setCell(0, 2, 'org.testtask.app.GmailTest')
-data.setCell(0, 3, 23002);
+data.setCell(0, 3, 33496);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -268,12 +267,20 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">org.testtask.app.GmailTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyGmailAuthorization</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">verifyGmailAuthorization(IncorrectMail, IncorrectPassword)</span>
+                <span class="method-start">20 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanup</span>
+                <span class="method-start">33545 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

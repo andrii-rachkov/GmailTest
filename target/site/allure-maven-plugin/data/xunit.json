@@ -1,17 +1,17 @@
 {
   "time" : {
-    "start" : 1461852710858,
-    "stop" : 1461852733715,
-    "duration" : 22857
+    "start" : 1461854136255,
+    "stop" : 1461854169620,
+    "duration" : 33365
   },
   "testSuites" : [ {
-    "uid" : "b3047f116fc575d6",
+    "uid" : "5de5efee3ed3c7bf",
     "name" : "Surefire suite : Surefire test",
     "title" : "Surefire suite : Surefire test",
     "time" : {
-      "start" : 1461852710858,
-      "stop" : 1461852733715,
-      "duration" : 22857
+      "start" : 1461854136255,
+      "stop" : 1461854169620,
+      "duration" : 33365
     },
     "statistic" : {
       "total" : 1,
@@ -23,13 +23,13 @@
     },
     "description" : null,
     "testCases" : [ {
-      "uid" : "3925ba79d6315ebc",
-      "name" : "verifyGmailAuthorization",
-      "title" : "Verify gmail authorization",
+      "uid" : "468271902cb74aa3",
+      "name" : "verifyGmailAuthorization[IncorrectMail,IncorrectPassword]",
+      "title" : "Verify gmail authorization [IncorrectMail,IncorrectPassword]",
       "time" : {
-        "start" : 1461852710858,
-        "stop" : 1461852733715,
-        "duration" : 22857
+        "start" : 1461854136255,
+        "stop" : 1461854169620,
+        "duration" : 33365
       },
       "severity" : "NORMAL",
       "status" : "FAILED"

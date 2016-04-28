@@ -1,27 +1,25 @@
 -------------------------------------------------------------------------------
 Test set: org.testtask.app.GmailTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.429 sec <<< FAILURE! - in org.testtask.app.GmailTest
-verifyGmailAuthorization(org.testtask.app.GmailTest)  Time elapsed: 23.022 sec  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 37.119 sec <<< FAILURE! - in org.testtask.app.GmailTest
+verifyGmailAuthorization(org.testtask.app.GmailTest)  Time elapsed: 33.518 sec  <<< FAILURE!
 com.codeborne.selenide.ex.ElementNotFound: 
-Element not found {#Passwd}
+Element not found {By.xpath: .//*[@class="gb_b gb_7a gb_R"]}
 Expected: visible
-	at org.testtask.app.GmailTest.login(GmailTest.java:30)
-	at org.testtask.app.GmailTest.verifyGmailAuthorization(GmailTest.java:21)
+	at org.testtask.app.GmailTest.verifyGmailAuthorization(GmailTest.java:42)
 Caused by: org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: {"method":"css selector","selector":"#Passwd"}
-Command duration or timeout: 14 milliseconds
+Unable to locate element: {"method":"xpath","selector":".//*[@class=\"gb_b gb_7a gb_R\"]"}
+Command duration or timeout: 30 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'HRK1-LHP-F49193', ip: '172.28.135.60', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_51'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, pageLoadStrategy=none, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, pageLoadingStrategy=none, cssSelectorsEnabled=true}]
-Session ID: 7aa108d5-27be-415a-860b-fd9f6aae3730
-*** Element info: {Using=css selector, value=#Passwd}
-	at org.testtask.app.GmailTest.login(GmailTest.java:30)
-	at org.testtask.app.GmailTest.verifyGmailAuthorization(GmailTest.java:21)
+Session ID: 5d2dff4f-6966-478c-8cd3-d19c33723390
+*** Element info: {Using=xpath, value=.//*[@class="gb_b gb_7a gb_R"]}
+	at org.testtask.app.GmailTest.verifyGmailAuthorization(GmailTest.java:42)
 Caused by: org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: {"method":"css selector","selector":"#Passwd"}
+Unable to locate element: {"method":"xpath","selector":".//*[@class=\"gb_b gb_7a gb_R\"]"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'HRK1-LHP-F49193', ip: '172.28.135.60', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_51'
