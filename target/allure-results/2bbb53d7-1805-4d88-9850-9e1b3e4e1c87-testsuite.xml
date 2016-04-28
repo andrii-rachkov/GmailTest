@@ -1,20 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Surefire suite" duration-ms="23070" started-at="2016-04-28T14:11:50Z" finished-at="2016-04-28T14:12:13Z">
-    <groups>
-    </groups>
-    <test name="Surefire test" duration-ms="23070" started-at="2016-04-28T14:11:50Z" finished-at="2016-04-28T14:12:13Z">
-      <class name="org.testtask.app.GmailTest">
-        <test-method status="FAIL" signature="verifyGmailAuthorization()[pri:0, instance:org.testtask.app.GmailTest@884e8]" name="verifyGmailAuthorization" duration-ms="23002" started-at="2016-04-28T17:11:50Z" finished-at="2016-04-28T17:12:13Z">
-          <exception class="com.codeborne.selenide.ex.ElementNotFound">
-            <message>
-              <![CDATA[Element not found {#Passwd}
-Expected: visible]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[Element not found {#Passwd}
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1461852710661" stop="1461852733761" version="1.4.23" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Surefire suite : Surefire test</name>
+    <title>Surefire suite : Surefire test</title>
+    <test-cases>
+        <test-case start="1461852710858" stop="1461852733715" status="failed">
+            <name>verifyGmailAuthorization</name>
+            <failure>
+                <message>ElementNotFound: Element not found {#Passwd}
+Expected: visible</message>
+                <stack-trace>Element not found {#Passwd}
 Expected: visible
 Screenshot: file:/D:/testtask/build/reports/tests/1461852733486.0.png
 Timeout: 10 s.
@@ -88,18 +82,23 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'HRK1-LHP-F49193', ip: '172.28.135.60', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_51'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous5143475495535736181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous5143475495535736181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous5143475495535736181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous5143475495535736181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous5143475495535736181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.codeborne.selenide.ex.ElementNotFound -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyGmailAuthorization -->
-      </class> <!-- org.testtask.app.GmailTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
-</testng-results>
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous5143475495535736181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous5143475495535736181webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous5143475495535736181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous5143475495535736181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/ANDRII~1.RAC/AppData/Local/Temp/anonymous5143475495535736181webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="HRK1-LHP-F49193"/>
+                <label name="thread" value="10212@HRK1-LHP-F49193.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
