@@ -1,0 +1,38 @@
+{
+  "time" : {
+    "start" : 1461849325475,
+    "stop" : 1461849348382,
+    "duration" : 22907
+  },
+  "testSuites" : [ {
+    "uid" : "5316e81d7613f3ca",
+    "name" : "Surefire suite : Surefire test",
+    "title" : "Surefire suite : Surefire test",
+    "time" : {
+      "start" : 1461849325475,
+      "stop" : 1461849348382,
+      "duration" : 22907
+    },
+    "statistic" : {
+      "total" : 1,
+      "passed" : 0,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 1,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "1fc05e2fe0d15f6e",
+      "name" : "verifyGmailAuthorization",
+      "title" : "Verify gmail authorization",
+      "time" : {
+        "start" : 1461849325475,
+        "stop" : 1461849348382,
+        "duration" : 22907
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    } ]
+  } ]
+}

@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: org.testtask.app.GmailTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.51 sec <<< FAILURE! - in org.testtask.app.GmailTest
+verifyGmailAuthorization(org.testtask.app.GmailTest)  Time elapsed: 23.073 sec  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {#Passwd}
+Expected: visible
+	at org.testtask.app.GmailTest.login(GmailTest.java:38)
+	at org.testtask.app.GmailTest.verifyGmailAuthorization(GmailTest.java:29)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"css selector","selector":"#Passwd"}
+Command duration or timeout: 25 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'HRK1-LHP-F49193', ip: '172.28.135.60', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, pageLoadStrategy=none, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, pageLoadingStrategy=none, cssSelectorsEnabled=true}]
+Session ID: 3aa29e6f-6a43-45f6-96c1-36865d268224
+*** Element info: {Using=css selector, value=#Passwd}
+	at org.testtask.app.GmailTest.login(GmailTest.java:38)
+	at org.testtask.app.GmailTest.verifyGmailAuthorization(GmailTest.java:29)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"css selector","selector":"#Passwd"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'HRK1-LHP-F49193', ip: '172.28.135.60', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: driver.version: unknown
+

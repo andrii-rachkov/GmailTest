@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.testtask.app.GmailTest" time="24.51" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="c:\Program Files (x86)\Java\jdk1.8.0_51\jre\bin"/>
+    <property name="java.vm.version" value="25.51-b03"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="d:/testtask"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\testtask"/>
+    <property name="java.runtime.version" value="1.8.0_51-b16"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="c:\Program Files (x86)\Java\jdk1.8.0_51\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\ANDRII~1.RAC\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="c:/Program Files (x86)/apache-maven-3.3.9/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="c:\Program Files (x86)\Java\jdk1.8.0_51\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;z:\bin;.;C:\Program Files (x86)\Git\local\bin;C:\Program Files (x86)\Git\mingw\bin;C:\Program Files (x86)\Git\bin;c:\ProgramData\Oracle\Java\javapath;c:\Python34\;c:\Python34\Scripts;c:\Windows\system32;c:\Windows;c:\Windows\System32\Wbem;c:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Git\bin;c:\Program Files\IVI Foundation\VISA\Win64\Bin\;c:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;c:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;c:\Program Files (x86)\nodejs\;c:\Python34\;c:\Program Files (x86)\Java\jdk1.8.0_51\bin;d:\adt-bundle-windows-x86-20131030\sdk\tools;d:\adt-bundle-windows-x86-20131030\sdk\platform-tools;c:\Program Files (x86)\Skype\Phone\;d:\adt-bundle-windows-x86-20131030\sdk\tools;c:\Program Files\ApacheSWFoundation\apache-ant-1.9.4\bin;c:\Program Files (x86)\Java\jdk1.8.0_51\bin;C:\Program Files (x86)\Git\bin;c:\Users\andrii.rachkov\AppData\Roaming\npm;c:\Python34\;c:\Users\andrii.rachkov\AppData\Local\Box\Box Edit\;c:\tools\gradle-2.7\bin;c:\Program Files (x86)\apache-maven-3.3.9\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\andrii.rachkov"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="user.name" value="andrii.rachkov"/>
+    <property name="java.class.path" value="c:/Program Files (x86)/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="c:\Program Files (x86)\Java\jdk1.8.0_51\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test site"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_51"/>
+    <property name="java.ext.dirs" value="c:\Program Files (x86)\Java\jdk1.8.0_51\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="c:\Program Files (x86)\Java\jdk1.8.0_51\jre\lib\resources.jar;c:\Program Files (x86)\Java\jdk1.8.0_51\jre\lib\rt.jar;c:\Program Files (x86)\Java\jdk1.8.0_51\jre\lib\sunrsasign.jar;c:\Program Files (x86)\Java\jdk1.8.0_51\jre\lib\jsse.jar;c:\Program Files (x86)\Java\jdk1.8.0_51\jre\lib\jce.jar;c:\Program Files (x86)\Java\jdk1.8.0_51\jre\lib\charsets.jar;c:\Program Files (x86)\Java\jdk1.8.0_51\jre\lib\jfr.jar;c:\Program Files (x86)\Java\jdk1.8.0_51\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp866"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="c:\Program Files (x86)\apache-maven-3.3.9"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp866"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase name="verifyGmailAuthorization" classname="org.testtask.app.GmailTest" time="23.073">
+    <failure message="Element not found {#Passwd}&#10;Expected: visible" type="com.codeborne.selenide.ex.ElementNotFound">com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {#Passwd}
+Expected: visible
+	at org.testtask.app.GmailTest.login(GmailTest.java:38)
+	at org.testtask.app.GmailTest.verifyGmailAuthorization(GmailTest.java:29)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"css selector","selector":"#Passwd"}
+Command duration or timeout: 25 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'HRK1-LHP-F49193', ip: '172.28.135.60', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, pageLoadStrategy=none, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, pageLoadingStrategy=none, cssSelectorsEnabled=true}]
+Session ID: 3aa29e6f-6a43-45f6-96c1-36865d268224
+*** Element info: {Using=css selector, value=#Passwd}
+	at org.testtask.app.GmailTest.login(GmailTest.java:38)
+	at org.testtask.app.GmailTest.verifyGmailAuthorization(GmailTest.java:29)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"css selector","selector":"#Passwd"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'HRK1-LHP-F49193', ip: '172.28.135.60', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: driver.version: unknown
+</failure>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Apr 28, 2016 4:15:35 PM com.codeborne.selenide.webdriver.WebDriverFactory createWebDriver
+INFO: BrowserName=firefox Version=46.0 Platform=WINDOWS
+Apr 28, 2016 4:15:35 PM com.codeborne.selenide.webdriver.WebDriverFactory createWebDriver
+INFO: Selenide v. 3.5.1
+Apr 28, 2016 4:15:35 PM com.codeborne.selenide.webdriver.WebDriverFactory createWebDriver
+INFO: Selenium WebDriver v. 2.53.0 build time: 2016-03-15 10:43:46
+Apr 28, 2016 4:15:35 PM com.codeborne.selenide.impl.WebDriverThreadLocalContainer createDriver
+INFO: Create webdriver in current thread 1: FirefoxDriver -> FirefoxDriver: firefox on WINDOWS (3aa29e6f-6a43-45f6-96c1-36865d268224)
+]]></system-err>
+  </testcase>
+</testsuite>

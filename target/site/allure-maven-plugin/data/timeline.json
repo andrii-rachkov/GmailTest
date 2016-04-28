@@ -1,0 +1,20 @@
+{
+  "hosts" : [ {
+    "title" : "HRK1-LHP-F49193",
+    "threads" : [ {
+      "title" : "10236@HRK1-LHP-F49193.main(1)",
+      "testCases" : [ {
+        "uid" : "1fc05e2fe0d15f6e",
+        "name" : "verifyGmailAuthorization",
+        "title" : "Verify gmail authorization",
+        "time" : {
+          "start" : 1461849325475,
+          "stop" : 1461849348382,
+          "duration" : 22907
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      } ]
+    } ]
+  } ]
+}
