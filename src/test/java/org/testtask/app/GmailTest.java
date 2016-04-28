@@ -6,6 +6,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Condition.appears;
+import static com.codeborne.selenide.Condition.disappears;
 import static com.codeborne.selenide.Configuration.*;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.closeWebDriver;
@@ -33,14 +34,13 @@ public class GmailTest {
         open("/");
 
         GmailSpec.enterEmail(email).pressEnter();
-        Thread.sleep(2000);
+
         assertThat("Verify that mail entered correctly.",
-                GmailSpec.eMailErrorLabel.isDisplayed(), is(false));
+                GmailSpec.eMailErrorLabel.waitUntil(disappears, 2000).isDisplayed(), is(false));
 
         GmailSpec.enterPassword(password).pressEnter();
-        Thread.sleep(2000);
         assertThat("Verify that password entered correctly.",
-                GmailSpec.passwordErrorLabel.exists(), is(false));
+                GmailSpec.passwordErrorLabel.waitUntil(disappears, 2000).exists(), is(false));
 
         assertThat("Verify that login authorization was successful.",
                 GmailSpec.googleAccount.waitUntil(appears, 20000).isDisplayed(), is(true));
